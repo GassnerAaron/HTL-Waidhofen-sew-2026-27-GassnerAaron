@@ -59,7 +59,7 @@ class Wuerfel : Figur
 
 class FigurListe
 {
-    private readonly List<Figur> figuren = new();
+    private List<Figur> figuren = new List<Figur>();
 
     public int Count
     {
@@ -71,7 +71,6 @@ class FigurListe
 
     public void Add(Figur figur)
     {
-        ArgumentNullException.ThrowIfNull(figur);
         figuren.Add(figur);
     }
 
@@ -89,9 +88,9 @@ class FigurListe
     {
         foreach (Figur figur in figuren)
         {
-            Console.WriteLine(
-                $"{figur.Beschreibung}: Oberfläche = {figur.BerechneOberflaeche():F2}, " +
-                $"Volumen = {figur.BerechneVolumen():F2}");
+            Console.WriteLine("Beschreibung: " + figur.Beschreibung);
+            Console.WriteLine("Oberfläche: " + figur.BerechneOberflaeche());
+            Console.WriteLine("Volumen: " + figur.BerechneVolumen());
         }
     }
 }
@@ -100,9 +99,9 @@ class Program
 {
     static void Main()
     {
-        FigurListe liste = new();
+        FigurListe liste = new FigurListe();
 
-        Kugel k1 = new("K1", 10);
+        Kugel k1 = new Kugel("K1", 10);
         liste.Add(new Kugel("K2", 8));
         liste.Add(new Wuerfel("W1", 3));
         liste.Add(new Wuerfel("W2", 4));
@@ -110,7 +109,7 @@ class Program
         liste.Remove(1);
         liste.Remove(k1);
 
-        Console.WriteLine($"Anzahl der Elemente in der Liste: {liste.Count}");
+        Console.WriteLine("Anzahl der Elemente in der Liste: " + liste.Count);
         liste.AusgabeAllerFiguren();
     }
 }
