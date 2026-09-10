@@ -59,7 +59,40 @@ class Wuerfel : Figur
 
 class FigurListe 
 {
-    // TODO
+    private readonly System.Collections.Generic.List<Figur> figuren =
+        new System.Collections.Generic.List<Figur>();
+
+    public int Count => figuren.Count;
+
+    public void Add(Figur figur)
+    {
+        if (figur == null)
+        {
+            throw new ArgumentNullException(nameof(figur));
+        }
+
+        figuren.Add(figur);
+    }
+
+    public void Remove(int index)
+    {
+        figuren.RemoveAt(index);
+    }
+
+    public void Remove(Figur figur)
+    {
+        figuren.Remove(figur);
+    }
+
+    public void AusgabeAllerFiguren()
+    {
+        foreach (Figur figur in figuren)
+        {
+            Console.WriteLine(
+                $"{figur.Beschreibung}: Oberfläche = {figur.BerechneOberflaeche():F2}, " +
+                $"Volumen = {figur.BerechneVolumen():F2}");
+        }
+    }
 }
 
 static void Main(string[] args) {
