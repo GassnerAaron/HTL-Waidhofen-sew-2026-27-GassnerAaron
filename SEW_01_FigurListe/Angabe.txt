@@ -1,0 +1,1 @@
+Stellen Sie die Klasse FigurListe so fertig, dass das vorgegebene Hauptprogramm funktioniert.
