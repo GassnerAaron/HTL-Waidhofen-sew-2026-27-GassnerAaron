@@ -61,7 +61,13 @@ class FigurListe
 {
     private readonly List<Figur> figuren = new();
 
-    public int Count => figuren.Count;
+    public int Count
+    {
+        get
+        {
+            return figuren.Count;
+        }
+    }
 
     public void Add(Figur figur)
     {

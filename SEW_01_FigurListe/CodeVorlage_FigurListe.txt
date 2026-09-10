@@ -62,7 +62,13 @@ class FigurListe
     private readonly System.Collections.Generic.List<Figur> figuren =
         new System.Collections.Generic.List<Figur>();
 
-    public int Count => figuren.Count;
+    public int Count
+    {
+        get
+        {
+            return figuren.Count;
+        }
+    }
 
     public void Add(Figur figur)
     {
