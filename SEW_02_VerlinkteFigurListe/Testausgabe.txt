@@ -1,0 +1,144 @@
+
+=== Add(K1) ===
+K1 (Oberflaeche=1256,64, Volumen=4188,79)
+Count = 1
+OK: Add(K1): Reihenfolge und Count
+
+=== Add(W1) ===
+K1 (Oberflaeche=1256,64, Volumen=4188,79)
+W1 (Oberflaeche=54,00, Volumen=27,00)
+Count = 2
+OK: Add(W1): Reihenfolge und Count
+
+=== Add(K2) ===
+K1 (Oberflaeche=1256,64, Volumen=4188,79)
+W1 (Oberflaeche=54,00, Volumen=27,00)
+K2 (Oberflaeche=804,25, Volumen=2144,66)
+Count = 3
+OK: Add(K2): Reihenfolge und Count
+
+=== Add(W2) ===
+K1 (Oberflaeche=1256,64, Volumen=4188,79)
+W1 (Oberflaeche=54,00, Volumen=27,00)
+K2 (Oberflaeche=804,25, Volumen=2144,66)
+W2 (Oberflaeche=96,00, Volumen=64,00)
+Count = 4
+OK: Add(W2): Reihenfolge und Count
+
+=== Add x5 ===
+K1 (Oberflaeche=1256,64, Volumen=4188,79)
+W1 (Oberflaeche=54,00, Volumen=27,00)
+K2 (Oberflaeche=804,25, Volumen=2144,66)
+W2 (Oberflaeche=96,00, Volumen=64,00)
+K3 (Oberflaeche=314,16, Volumen=523,60)
+Count = 5
+OK: Add x5: Reihenfolge und Count
+
+=== Push(W0-Push) ===
+W0-Push (Oberflaeche=24,00, Volumen=8,00)
+K1 (Oberflaeche=1256,64, Volumen=4188,79)
+W1 (Oberflaeche=54,00, Volumen=27,00)
+K2 (Oberflaeche=804,25, Volumen=2144,66)
+W2 (Oberflaeche=96,00, Volumen=64,00)
+K3 (Oberflaeche=314,16, Volumen=523,60)
+Count = 6
+OK: Push(W0-Push): Reihenfolge und Count
+
+=== Pop() liefert W0-Push ===
+K1 (Oberflaeche=1256,64, Volumen=4188,79)
+W1 (Oberflaeche=54,00, Volumen=27,00)
+K2 (Oberflaeche=804,25, Volumen=2144,66)
+W2 (Oberflaeche=96,00, Volumen=64,00)
+K3 (Oberflaeche=314,16, Volumen=523,60)
+Count = 5
+OK: Pop() liefert W0-Push: Reihenfolge und Count
+OK: Pop liefert dieselbe Figur mit Next == null
+
+=== InsertAt(2, K-Insert) ===
+K1 (Oberflaeche=1256,64, Volumen=4188,79)
+W1 (Oberflaeche=54,00, Volumen=27,00)
+K-Insert (Oberflaeche=452,39, Volumen=904,78)
+K2 (Oberflaeche=804,25, Volumen=2144,66)
+W2 (Oberflaeche=96,00, Volumen=64,00)
+K3 (Oberflaeche=314,16, Volumen=523,60)
+Count = 6
+OK: InsertAt(2, K-Insert): Reihenfolge und Count
+
+=== Remove(0) ===
+W1 (Oberflaeche=54,00, Volumen=27,00)
+K-Insert (Oberflaeche=452,39, Volumen=904,78)
+K2 (Oberflaeche=804,25, Volumen=2144,66)
+W2 (Oberflaeche=96,00, Volumen=64,00)
+K3 (Oberflaeche=314,16, Volumen=523,60)
+Count = 5
+OK: Remove(0): Reihenfolge und Count
+
+=== VertauscheBenachbarte() ===
+K-Insert (Oberflaeche=452,39, Volumen=904,78)
+W1 (Oberflaeche=54,00, Volumen=27,00)
+W2 (Oberflaeche=96,00, Volumen=64,00)
+K2 (Oberflaeche=804,25, Volumen=2144,66)
+K3 (Oberflaeche=314,16, Volumen=523,60)
+Count = 5
+OK: VertauscheBenachbarte(): Reihenfolge und Count
+OK: Paartausch behaelt dieselben Figuren
+
+=== Umdrehen() ===
+K3 (Oberflaeche=314,16, Volumen=523,60)
+K2 (Oberflaeche=804,25, Volumen=2144,66)
+W2 (Oberflaeche=96,00, Volumen=64,00)
+W1 (Oberflaeche=54,00, Volumen=27,00)
+K-Insert (Oberflaeche=452,39, Volumen=904,78)
+Count = 5
+OK: Umdrehen(): Reihenfolge und Count
+OK: Umdrehen behaelt dieselben Figuren
+
+=== Zweite Liste: Add(Z1) ===
+Z1 (Oberflaeche=113,10, Volumen=113,10)
+Count = 1
+OK: Zweite Liste: Add(Z1): Reihenfolge und Count
+
+=== Zweite Liste: Add(Z2) ===
+Z1 (Oberflaeche=113,10, Volumen=113,10)
+Z2 (Oberflaeche=24,00, Volumen=8,00)
+Count = 2
+OK: Zweite Liste: Add(Z2): Reihenfolge und Count
+
+=== Anhaengen(zweiteListe) ===
+K3 (Oberflaeche=314,16, Volumen=523,60)
+K2 (Oberflaeche=804,25, Volumen=2144,66)
+W2 (Oberflaeche=96,00, Volumen=64,00)
+W1 (Oberflaeche=54,00, Volumen=27,00)
+K-Insert (Oberflaeche=452,39, Volumen=904,78)
+Z1 (Oberflaeche=113,10, Volumen=113,10)
+Z2 (Oberflaeche=24,00, Volumen=8,00)
+Count = 7
+OK: Anhaengen(zweiteListe): Reihenfolge und Count
+zweiteListe.Count = 0
+OK: Zweite Liste ist leer; Figuren wurden uebernommen
+
+=== Randfalltests ===
+OK: Leere Liste: Pop gibt null
+OK: Leere Liste: Remove, Umdrehen, Paartausch und Ausgabe
+OK: Ein Element: Umdrehen
+OK: Ein Element: Paartausch
+OK: Ein Element: Pop
+OK: Ein Element: Remove(0)
+OK: Remove(-1) aendert nichts
+OK: Remove(Count) aendert nichts
+OK: InsertAt(-5) fuegt vorne ein
+OK: InsertAt(99) fuegt hinten ein
+OK: Remove in der Mitte trennt die entfernte Figur
+OK: Remove am Ende
+OK: Anhaengen einer leeren Liste
+OK: Anhaengen mit null
+OK: Anhaengen an eine leere eigene Liste
+OK: Gerade Anzahl: A B C D wird B A D C
+OK: Zweimal Paartausch ergibt die Ausgangsliste
+OK: Zweimal Umdrehen ergibt die Ausgangsliste
+OK: Selbst-Anhaengen wird ignoriert
+OK: Null-Figuren werden ignoriert
+OK: InsertAt(0) in leerer Liste und InsertAt(Count)
+OK: Berechnungen von Kugel und Wuerfel
+
+Tests: 40, OK: 40, FEHLER: 0
